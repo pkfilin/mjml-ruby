@@ -94,7 +94,7 @@ module MJML
     end
 
     def should_get_outpout_from_file?
-      @template.size > 20_000
+      @template.to_s.size > 20_000
     end
 
     def parse_output(out)
